@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "15dHwheln0QzAO0MW1z/EgpcX1tb/oJhxwRtQBQNxkkHyJAxfX5xYvBPQUBOMdDyYAOBgAn+3WcmiDapr8zrnw==",
+  "dgSpecHash": "FNr8KyFMh0JVjJNSsGOijohAMNaKqRIeA88qytVyVy1Iybp0hAYEkdR0a1Y+17QpsyGXDTJUcV4QO8clz51aNQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\svdsk25\\Desktop\\Dot-Net-Training\\EcmmerceWebApi\\EcmmerceWebApi\\EcmmerceWebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\svdsk25\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\svdsk25\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.24\\microsoft.aspnetcore.authentication.jwtbearer.3.1.24.nupkg.sha512",
     "C:\\Users\\svdsk25\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\svdsk25\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\svdsk25\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",

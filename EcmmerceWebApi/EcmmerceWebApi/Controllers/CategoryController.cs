@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using EcmmerceWebApi.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -11,11 +12,16 @@ namespace EcmmerceWebApi.Controllers
     [ApiController]
     public class CategoryController : ControllerBase
     {
+        EcommerceDbsContext _ecommerceDbsContext;
+        public CategoryController(EcommerceDbsContext ecommerceDbsContext)
+        {
+            _ecommerceDbsContext = ecommerceDbsContext;
+        }
         [HttpGet]
         [Route("GetAllCategories")]
-       public string GetAllCategories()
+       public IEnumerable<TblCategory> GetAllCategories()
         {
-            return "Temp";
+            return _ecommerceDbsContext.TblCategories.ToList();
         }
     }
 }

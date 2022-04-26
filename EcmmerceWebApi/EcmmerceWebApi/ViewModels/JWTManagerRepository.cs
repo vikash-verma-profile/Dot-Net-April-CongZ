@@ -10,9 +10,9 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EcmmerceWebApi.Models
+namespace EcmmerceWebApi.ViewModels
 {
-    public class JWTManagerRepository: IJWTManagerRepository
+    public class JWTManagerRepository : IJWTManagerRepository
     {
         Dictionary<string, string> UserRecords = new Dictionary<string, string>
         {
@@ -28,6 +28,7 @@ namespace EcmmerceWebApi.Models
             configuartion = iconfiguration;
         }
 
+        
         public Tokens Authenticate(Users users)
         {
             if(!UserRecords.Any(x=>x.Key==users.Name && x.Value == users.Password))
@@ -37,6 +38,7 @@ namespace EcmmerceWebApi.Models
 
             var tokenHandler = new JwtSecurityTokenHandler();
             var tokenKey = Encoding.UTF8.GetBytes(configuartion["JWT:Key"]);
+
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject=new ClaimsIdentity(new Claim[]

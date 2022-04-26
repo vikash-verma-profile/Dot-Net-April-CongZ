@@ -1,5 +1,6 @@
 using EcmmerceWebApi.Interfaces;
 using EcmmerceWebApi.Models;
+using EcmmerceWebApi.ViewModels;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -47,12 +48,13 @@ namespace EcmmerceWebApi
                     ValidateAudience = false,
                     ValidateLifetime = true,
                     ValidateIssuerSigningKey = true,
-                    ValidIssuer = Configuration["JWT:Key"],
+                    ValidIssuer = Configuration["JWT:Issuer"],
                     ValidAudience = Configuration["JWT:Audience"],
                     IssuerSigningKey = new SymmetricSecurityKey(key)
                 };
             });
             services.AddSingleton<IJWTManagerRepository, JWTManagerRepository>();
+            services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -66,7 +68,7 @@ namespace EcmmerceWebApi
             app.UseHttpsRedirection();
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

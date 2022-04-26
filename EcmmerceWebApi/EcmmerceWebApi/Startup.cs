@@ -33,6 +33,7 @@ namespace EcmmerceWebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSwaggerGen();
             services.AddDbContext<EcommerceDbsContext>(options => options.UseSqlServer(Configuration.GetConnectionString("EcommerceDbConnection")));
             services.AddAuthentication(x=>
             {
@@ -54,7 +55,6 @@ namespace EcmmerceWebApi
                 };
             });
             services.AddSingleton<IJWTManagerRepository, JWTManagerRepository>();
-            services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -64,7 +64,8 @@ namespace EcmmerceWebApi
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseSwagger();
+            app.UseSwaggerUI();
             app.UseHttpsRedirection();
 
             app.UseRouting();

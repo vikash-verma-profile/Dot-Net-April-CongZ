@@ -1,0 +1,6 @@
+Docker Container=>these are deployed instances created from images or templates		
+				its an image instance
+
+
+Docker Image=> thease are templates used to create containers
+			its a container blueprint

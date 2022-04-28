@@ -19,3 +19,13 @@ C:\Users\svdsk25\Desktop\Dot-Net-Training\AspNetCoreMicroServices\ProductService
 C:\Users\svdsk25\Desktop\Dot-Net-Training\AspNetCoreMicroServices\ProductService\obj\Debug\netcoreapp3.1\ProductService.dll
 C:\Users\svdsk25\Desktop\Dot-Net-Training\AspNetCoreMicroServices\ProductService\obj\Debug\netcoreapp3.1\ProductService.pdb
 C:\Users\svdsk25\Desktop\Dot-Net-Training\AspNetCoreMicroServices\ProductService\obj\Debug\netcoreapp3.1\ProductService.genruntimeconfig.cache
+C:\Users\svdsk25\Desktop\Dot-Net-Training\AspNetCoreMicroServices\ProductService\bin\Debug\netcoreapp3.1\Consul.dll
+C:\Users\svdsk25\Desktop\Dot-Net-Training\AspNetCoreMicroServices\ProductService\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\svdsk25\Desktop\Dot-Net-Training\AspNetCoreMicroServices\ProductService\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\svdsk25\Desktop\Dot-Net-Training\AspNetCoreMicroServices\ProductService\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\svdsk25\Desktop\Dot-Net-Training\AspNetCoreMicroServices\ProductService\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\svdsk25\Desktop\Dot-Net-Training\AspNetCoreMicroServices\ProductService\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\svdsk25\Desktop\Dot-Net-Training\AspNetCoreMicroServices\ProductService\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\svdsk25\Desktop\Dot-Net-Training\AspNetCoreMicroServices\ProductService\bin\Debug\netcoreapp3.1\Common.dll
+C:\Users\svdsk25\Desktop\Dot-Net-Training\AspNetCoreMicroServices\ProductService\bin\Debug\netcoreapp3.1\Common.pdb
+C:\Users\svdsk25\Desktop\Dot-Net-Training\AspNetCoreMicroServices\ProductService\obj\Debug\netcoreapp3.1\ProductService.csproj.CopyComplete

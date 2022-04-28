@@ -361,3 +361,8 @@ C:\Users\svdsk25\Desktop\Dot-Net-Training\AspNetCoreMicroServices\APIGateway\obj
 C:\Users\svdsk25\Desktop\Dot-Net-Training\AspNetCoreMicroServices\APIGateway\obj\Debug\netcoreapp3.1\APIGateway.genruntimeconfig.cache
 C:\Users\svdsk25\Desktop\Dot-Net-Training\AspNetCoreMicroServices\APIGateway\bin\Debug\netcoreapp3.1\ocelot.json
 C:\Users\svdsk25\Desktop\Dot-Net-Training\AspNetCoreMicroServices\APIGateway\obj\Debug\netcoreapp3.1\APIGateway.csproj.AssemblyReference.cache
+C:\Users\svdsk25\Desktop\Dot-Net-Training\AspNetCoreMicroServices\APIGateway\bin\Debug\netcoreapp3.1\ocelot_old.json
+C:\Users\svdsk25\Desktop\Dot-Net-Training\AspNetCoreMicroServices\APIGateway\bin\Debug\netcoreapp3.1\Consul.dll
+C:\Users\svdsk25\Desktop\Dot-Net-Training\AspNetCoreMicroServices\APIGateway\bin\Debug\netcoreapp3.1\Ocelot.Provider.Consul.dll
+C:\Users\svdsk25\Desktop\Dot-Net-Training\AspNetCoreMicroServices\APIGateway\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard1.3\System.Net.Http.WinHttpHandler.dll
+C:\Users\svdsk25\Desktop\Dot-Net-Training\AspNetCoreMicroServices\APIGateway\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard1.3\System.Net.Http.WinHttpHandler.dll

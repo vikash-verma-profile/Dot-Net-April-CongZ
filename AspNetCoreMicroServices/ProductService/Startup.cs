@@ -10,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Common;
 
 namespace ProductService
 {
@@ -27,6 +28,7 @@ namespace ProductService
         {
             services.AddControllers();
             services.AddScoped<IProductService, ProductServiceImpl>();
+            services.AddConsulConfig(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -36,7 +38,7 @@ namespace ProductService
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseConsul(Configuration);
             app.UseRouting();
 
             app.UseAuthorization();

@@ -4,7 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
-
+using Ocelot.Provider.Consul;
 
 namespace APIGateway
 {
@@ -17,7 +17,7 @@ namespace APIGateway
         public IConfiguration Configuration { get; }
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddOcelot();
+            services.AddOcelot().AddConsul();
         }
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {

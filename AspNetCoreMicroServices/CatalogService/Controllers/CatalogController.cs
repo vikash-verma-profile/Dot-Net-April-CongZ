@@ -30,5 +30,11 @@ namespace CatalogService.Controllers
             }
            
         }
+        [HttpGet("findone")]
+        public string Findone()
+        {
+            return "Hi";
+
+        }
     }
 }

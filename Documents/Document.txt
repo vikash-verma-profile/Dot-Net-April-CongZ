@@ -4,3 +4,34 @@ Docker Container=>these are deployed instances created from images or templates
 
 Docker Image=> thease are templates used to create containers
 			its a container blueprint
+			
+
+Api Gateway
+
+Upsteam==>request that will go to your microservice
+
+downstream=>the response going back to the user from microservice
+
+need of API Gateway
+
+-Traffic Routing
+-Load Balancing
+-API composition
+-Caching
+-Logging
+-Authentication
+-Authorization
+-Service Discovery
+
+Ocelot
+-Open Source API gateway for Dot net platform
+-Light weight and run on platform that suppports ASP.NET CORE
+
+
+
+Transit objects are always different, a new instance is provided to every controller and every service
+
+Scoped objects are same within a request,but different across different requests
+
+Singleton objects are the same for evert object and every request
+

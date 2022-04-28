@@ -3,7 +3,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:45732",
+      "applicationUrl": "http://localhost:34283",
       "sslPort": 0
     }
   },
@@ -12,12 +12,12 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "api/catalog/findall",
+      "launchUrl": "api/product/findall",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "CatalogService": {
+    "ProductService": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "weatherforecast",

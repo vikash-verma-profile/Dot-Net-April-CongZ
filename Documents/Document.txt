@@ -8,9 +8,9 @@ Docker Image=> thease are templates used to create containers
 
 Api Gateway
 
-Upsteam==>request that will go to your microservice
+Upsteam==>the response going back  your user
 
-downstream=>the response going back to the user from microservice
+downstream=>The request to microservice
 
 need of API Gateway
 

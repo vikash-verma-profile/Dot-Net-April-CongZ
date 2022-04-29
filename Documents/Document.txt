@@ -35,3 +35,17 @@ Scoped objects are same within a request,but different across different requests
 
 Singleton objects are the same for evert object and every request
 
+
+Queue Management/Messaging services
+
+MassTransit
+
+-Open-Source,light-weight message bus which will be used to create distributed application using Dot net Technologies.
+-Supports Rabbitmq,Azure Service Bus and Amazon SNQ/SQS.
+
+-Publish-This is used to Send an event
+-Send-This is used to send a command
+
+
+pub/sub-consumer
+

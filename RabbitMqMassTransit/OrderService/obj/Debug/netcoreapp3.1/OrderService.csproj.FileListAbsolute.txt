@@ -45,3 +45,4 @@ C:\Users\svdsk25\Desktop\Dot-Net-Training\RabbitMqMassTransit\OrderService\obj\D
 C:\Users\svdsk25\Desktop\Dot-Net-Training\RabbitMqMassTransit\OrderService\obj\Debug\netcoreapp3.1\OrderService.dll
 C:\Users\svdsk25\Desktop\Dot-Net-Training\RabbitMqMassTransit\OrderService\obj\Debug\netcoreapp3.1\OrderService.pdb
 C:\Users\svdsk25\Desktop\Dot-Net-Training\RabbitMqMassTransit\OrderService\obj\Debug\netcoreapp3.1\OrderService.genruntimeconfig.cache
+C:\Users\svdsk25\Desktop\Dot-Net-Training\RabbitMqMassTransit\OrderService\obj\Debug\netcoreapp3.1\OrderService.csproj.AssemblyReference.cache

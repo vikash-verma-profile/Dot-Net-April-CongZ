@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "iJRiWndaBBdAgnNonZQXp9clcIxw5RZAzrPZWzcYLTpFdB5PaGVsbjMSLhAUQ+7TtYZAND0KN4u6h3hGknaOyA==",
+  "dgSpecHash": "oSUZuimecp2GMyvHgQIqFWYF3I8dZMhNlJmJqVzidoGHwLpsvVYKRJ7A56pGQwN4FC9cBfOBImrI9Ppyg5ww9Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\svdsk25\\Desktop\\Dot-Net-Training\\RabbitMqMassTransit\\OrderService\\OrderService.csproj",
   "expectedPackageFiles": [
@@ -21,9 +21,9 @@
     "C:\\Users\\svdsk25\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.18\\microsoft.extensions.primitives.3.1.18.nupkg.sha512",
     "C:\\Users\\svdsk25\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\svdsk25\\.nuget\\packages\\rabbitmq.client\\6.2.4\\rabbitmq.client.6.2.4.nupkg.sha512",
-    "C:\\Users\\svdsk25\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
-    "C:\\Users\\svdsk25\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
-    "C:\\Users\\svdsk25\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
+    "C:\\Users\\svdsk25\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.3.1\\swashbuckle.aspnetcore.swagger.6.3.1.nupkg.sha512",
+    "C:\\Users\\svdsk25\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.3.1\\swashbuckle.aspnetcore.swaggergen.6.3.1.nupkg.sha512",
+    "C:\\Users\\svdsk25\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.3.1\\swashbuckle.aspnetcore.swaggerui.6.3.1.nupkg.sha512",
     "C:\\Users\\svdsk25\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\svdsk25\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\svdsk25\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",

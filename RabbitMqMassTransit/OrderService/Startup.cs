@@ -29,7 +29,7 @@ namespace OrderService
             services.AddSwaggerGen();
             services.AddMassTransit(x =>
             {
-                x.UsingRabbitMq((context, cfg) =>
+                x.AddBus(provider=>Bus.Factory.CreateUsingRabbitMq((cfg) =>
                 {
                     var uri = new Uri(Configuration["ServiceBus:Uri"]);
                     cfg.Host(uri, host =>
@@ -37,9 +37,10 @@ namespace OrderService
                          host.Username(Configuration["ServiceBus:Username"]);
                          host.Password(Configuration["ServiceBus:Password"]);
                      });
-
-                });
+                }));
+               
             });
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -29,7 +29,7 @@ namespace InventoryService
             services.AddMassTransit(x =>
             {
                 x.AddConsumer<OrderConsumer>();
-                x.UsingRabbitMq((context, cfg) =>
+                x.AddBus(provider=>Bus.Factory.CreateUsingRabbitMq((cfg) =>
                 {
                     var uri = new Uri(Configuration["ServiceBus:Uri"]);
                     cfg.Host(uri, host =>
@@ -42,10 +42,14 @@ namespace InventoryService
 
                     cfg.ReceiveEndpoint(Configuration["ServiceBus:Queue"], c =>
                     {
-                        c.ConfigureConsumer<OrderConsumer>(context);
+                        c.PrefetchCount = 20;
+                        c.UseMessageRetry(r => r.Interval(2, 100));
+                        c.ConfigureConsumer<OrderConsumer>(provider);
                     });
-                });
+                }));
             });
+
+          
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

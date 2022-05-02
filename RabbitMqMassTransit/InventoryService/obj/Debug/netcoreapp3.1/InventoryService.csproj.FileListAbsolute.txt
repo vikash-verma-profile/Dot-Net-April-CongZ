@@ -40,3 +40,4 @@ C:\Users\svdsk25\Desktop\Dot-Net-Training\RabbitMqMassTransit\InventoryService\o
 C:\Users\svdsk25\Desktop\Dot-Net-Training\RabbitMqMassTransit\InventoryService\obj\Debug\netcoreapp3.1\InventoryService.dll
 C:\Users\svdsk25\Desktop\Dot-Net-Training\RabbitMqMassTransit\InventoryService\obj\Debug\netcoreapp3.1\InventoryService.pdb
 C:\Users\svdsk25\Desktop\Dot-Net-Training\RabbitMqMassTransit\InventoryService\obj\Debug\netcoreapp3.1\InventoryService.genruntimeconfig.cache
+C:\Users\svdsk25\Desktop\Dot-Net-Training\RabbitMqMassTransit\InventoryService\obj\Debug\netcoreapp3.1\InventoryService.csproj.AssemblyReference.cache

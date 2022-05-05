@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\svdsk25\\source\\repos\\KafkaWithMicroservice\\Microservice.Producer\\Microservice.Producer.csproj": {}
+    "C:\\Users\\svdsk25\\Desktop\\Dot-Net-Training\\KafkaWithMicroservice\\Microservice.Producer\\Microservice.Producer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\svdsk25\\source\\repos\\KafkaWithMicroservice\\Microservice.Producer\\Microservice.Producer.csproj": {
+    "C:\\Users\\svdsk25\\Desktop\\Dot-Net-Training\\KafkaWithMicroservice\\Microservice.Producer\\Microservice.Producer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\svdsk25\\source\\repos\\KafkaWithMicroservice\\Microservice.Producer\\Microservice.Producer.csproj",
+        "projectUniqueName": "C:\\Users\\svdsk25\\Desktop\\Dot-Net-Training\\KafkaWithMicroservice\\Microservice.Producer\\Microservice.Producer.csproj",
         "projectName": "Microservice.Producer",
-        "projectPath": "C:\\Users\\svdsk25\\source\\repos\\KafkaWithMicroservice\\Microservice.Producer\\Microservice.Producer.csproj",
+        "projectPath": "C:\\Users\\svdsk25\\Desktop\\Dot-Net-Training\\KafkaWithMicroservice\\Microservice.Producer\\Microservice.Producer.csproj",
         "packagesPath": "C:\\Users\\svdsk25\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\svdsk25\\source\\repos\\KafkaWithMicroservice\\Microservice.Producer\\obj\\",
+        "outputPath": "C:\\Users\\svdsk25\\Desktop\\Dot-Net-Training\\KafkaWithMicroservice\\Microservice.Producer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\svdsk25\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,6 +43,10 @@
             "Confluent.Kafka": {
               "target": "Package",
               "version": "[1.4.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             }
           },
           "imports": [

@@ -215,11 +215,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\svdsk25\\source\\repos\\KafkaWithMicroservice\\Microservice.Consumer\\Microservice.Consumer.csproj",
+      "projectUniqueName": "C:\\Users\\svdsk25\\Desktop\\Dot-Net-Training\\KafkaWithMicroservice\\Microservice.Consumer\\Microservice.Consumer.csproj",
       "projectName": "Microservice.Consumer",
-      "projectPath": "C:\\Users\\svdsk25\\source\\repos\\KafkaWithMicroservice\\Microservice.Consumer\\Microservice.Consumer.csproj",
+      "projectPath": "C:\\Users\\svdsk25\\Desktop\\Dot-Net-Training\\KafkaWithMicroservice\\Microservice.Consumer\\Microservice.Consumer.csproj",
       "packagesPath": "C:\\Users\\svdsk25\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\svdsk25\\source\\repos\\KafkaWithMicroservice\\Microservice.Consumer\\obj\\",
+      "outputPath": "C:\\Users\\svdsk25\\Desktop\\Dot-Net-Training\\KafkaWithMicroservice\\Microservice.Consumer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\svdsk25\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -49,3 +49,20 @@ MassTransit
 
 pub/sub-consumer
 
+
+KAFKA
+
+
+1.KAFKA Topic
+
+2.Kafka cluster
+
+3.Kafka Producer
+
+4.Kafka Consumer
+
+5.Kafka Zookeeper
+
+6.Kafka Broker
+
+

@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = Microservice.Consumer
+build_property.ProjectDir = C:\Users\svdsk25\source\repos\KafkaWithMicroservice\Microservice.Consumer\

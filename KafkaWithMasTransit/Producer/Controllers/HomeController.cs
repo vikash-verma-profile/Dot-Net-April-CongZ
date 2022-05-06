@@ -19,8 +19,8 @@ namespace Producer.Controllers
             _topicProducer = topicProducer;
         }
 
-        [HttpPost("{title}")]
-        public async Task<IActionResult> PostAsync(string title)
+        [HttpPost()]
+        public async Task<IActionResult> PostAsync([FromBody]string title)
         {
             await _topicProducer.Produce(new VedioDeletedEvent { Title=title});
             return Ok(title);

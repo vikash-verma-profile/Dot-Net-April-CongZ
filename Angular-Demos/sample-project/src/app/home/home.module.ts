@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { MainRoutes } from '../Routing/app.MainRoutes';
 import { HomeComponent } from './home.component';
 import { MasterComponent } from './master.component';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { MasterComponent } from './master.component';
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(MainRoutes)
+    RouterModule.forRoot(MainRoutes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [MasterComponent]

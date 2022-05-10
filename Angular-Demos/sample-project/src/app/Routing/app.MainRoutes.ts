@@ -1,10 +1,9 @@
-import { CustomerComponent } from "../customer/customer.component";
 import { HomeComponent } from "../home/home.component";
-import { SupplierComponent } from "../supplier/supplier.component";
+
 
 export const MainRoutes = [
     { path: 'Home', component: HomeComponent },
-    { path: 'Customer', component: CustomerComponent },
-    { path: 'Supplier', component: SupplierComponent },
+    { path: 'Customer', loadChildren:()=>import('../customer/customer.module').then(m=>m.CustomerModule)},
+    { path: 'Supplier', loadChildren:()=>import('../supplier/supplier.module').then(m=>m.SupplierModule)},
     { path: '', component: HomeComponent }
 ];

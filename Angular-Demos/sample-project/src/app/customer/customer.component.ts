@@ -52,4 +52,8 @@ export class CustomerComponent {
   DeleteCustomer(input: Customer) {
     console.log(input);
   }
+
+  hasError(typeofvalidator:string,controlname:string):boolean{
+    return this.CustomerModel.formCustomerGroup.controls[controlname].hasError(typeofvalidator);
+  }
 }

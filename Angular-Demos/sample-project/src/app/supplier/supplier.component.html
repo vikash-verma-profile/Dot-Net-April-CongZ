@@ -1,1 +1,45 @@
-<p>supplier works!</p>
+<!-- {{sample}}
+<br />
+{{title}}
+<img [src]="imageUrl" width="100" height="100"/>
+<br /><br /> -->
+<form [formGroup]="SupplierModel.formSupplierGroup">
+    Supplier Code <input formControlName="SupplierCodeControl" [(ngModel)]="SupplierModel.SupplierCode"
+        type="text" /><br /><br />
+    Supplier Name <input formControlName="SupplierNameControl" [(ngModel)]="SupplierModel.SupplierName"
+        type="text" /><br /><br />
+    Supplier Amount <input [ngModelOptions]="{standalone: true}" [(ngModel)]="SupplierModel.SupplierAmount"
+        type="text" /><br /><br />
+    <input [disabled]="!(SupplierModel.formSupplierGroup.valid)" type="submit" Value="Add" (click)="AddSupplier()" />
+</form>
+
+<div style="color:red;" *ngIf="SupplierModel.formSupplierGroup.dirty" [hidden]="!(hasError('pattern','SupplierCodeControl'))">
+    Supplier Code format is not proper
+</div>
+<br />
+<div  style="color:red;" *ngIf="SupplierModel.formSupplierGroup.dirty" [hidden]="!(hasError('required','SupplierCodeControl'))">
+    Supplier Code is required
+</div>
+<br />
+<div style="color:red;" *ngIf="SupplierModel.formSupplierGroup.dirty" [hidden]="!(hasError('required','SupplierNameControl'))">
+    Supplier Name is required
+</div>
+<br />
+<!-- <table border="1">
+    <tr>
+        <td>Supplier Code</td>
+        <td>Supplier Name</td>
+        <td>Supplier Amount</td>
+        <td>Actions</td>
+    </tr>
+    <tr *ngFor="let cust of SupplierModels">
+        <td>{{cust.SupplierCode}}</td>
+        <td>{{cust.SupplierName}}</td>
+        <td>{{cust.SupplierAmount}}</td>
+        <td><input type="button" value="Edit" (click)="EditSupplier(cust)" />
+            <input type="button" value="Delete" (click)="DeleteSupplier(cust)" />
+        </td>
+    </tr>
+</table> -->
+
+<grid-ui [grid-columns]="[{'colName':'supplierCode'},{'colName':'supplierName'},{'colName':'supplierAmount'}]" [grid-data]="SupplierModels" ></grid-ui>

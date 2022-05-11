@@ -1,8 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { SupplierRoutes } from '../Routing/app.SupplierRoutes';
+import { GridUtiliyModule } from '../utility/utility.module';
 import { SupplierComponent } from './supplier.component';
 
 
@@ -13,7 +14,9 @@ import { SupplierComponent } from './supplier.component';
   imports: [
     CommonModule,
     FormsModule,
-    RouterModule.forChild(SupplierRoutes)
+    ReactiveFormsModule,
+    RouterModule.forChild(SupplierRoutes),
+    GridUtiliyModule
   ],
   providers: [],
   bootstrap: [SupplierComponent]

@@ -8,13 +8,24 @@
         type="text" /><br /><br />
     Customer Name <input formControlName="CustomerNameControl" [(ngModel)]="CustomerModel.customerName"
         type="text" /><br /><br />
-    Customer Amount <input formControlName="CustomerAmountControl" [(ngModel)]="CustomerModel.customerAmount"
+    Customer Amount <input  [ngModelOptions]="{standalone: true}" [(ngModel)]="CustomerModel.customerAmount"
         type="text" /><br /><br />
     <input [disabled]="!(CustomerModel.formCustomerGroup.valid)" type="submit" Value="Add" (click)="AddCustomer()" />
 </form>
 
-
-<table border="1">
+<div style="color:red;" *ngIf="CustomerModel.formCustomerGroup.dirty" [hidden]="!(hasError('pattern','CustomerCodeControl'))">
+    Customer Code format is not proper
+</div>
+<br />
+<div  style="color:red;" *ngIf="CustomerModel.formCustomerGroup.dirty" [hidden]="!(hasError('required','CustomerCodeControl'))">
+    Customer Code is required
+</div>
+<br />
+<div style="color:red;" *ngIf="CustomerModel.formCustomerGroup.dirty" [hidden]="!(hasError('required','CustomerNameControl'))">
+    Customer Name is required
+</div>
+<br />
+<!-- <table border="1">
     <tr>
         <td>Customer Code</td>
         <td>Customer Name</td>
@@ -29,4 +40,6 @@
             <input type="button" value="Delete" (click)="DeleteCustomer(cust)" />
         </td>
     </tr>
-</table>
+</table> -->
+
+<grid-ui [grid-columns]="[{'colName':'customerCode'},{'colName':'customerName'},{'colName':'customerAmount'}]" [grid-data]="CustomerModels" ></grid-ui>

@@ -56,4 +56,12 @@ export class CustomerComponent {
   hasError(typeofvalidator:string,controlname:string):boolean{
     return this.CustomerModel.formCustomerGroup.controls[controlname].hasError(typeofvalidator);
   }
+
+  SelectCustomer(_selected:Customer){
+    console.log("Data from Grid");
+    console.log(_selected);
+    this.CustomerModel.customerAmount=_selected.customerAmount;
+    this.CustomerModel.customerCode=_selected.customerCode;
+    this.CustomerModel.customerName=_selected.customerName;
+  }
 }

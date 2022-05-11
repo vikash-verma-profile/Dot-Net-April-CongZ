@@ -1,12 +1,17 @@
-{{sample}}
+<!-- {{sample}}
 <br />
 {{title}}
 <img [src]="imageUrl" width="100" height="100"/>
-<br /><br />
-Customer Code <input [(ngModel)]="CustomerModel.customerCode" type="text" /><br /><br />
-Customer Name <input [(ngModel)]="CustomerModel.customerName" type="text" /><br /><br />
-Customer Amount <input [(ngModel)]="CustomerModel.customerAmount" type="text" /><br /><br />
-<input type="submit" Value="Add" (click)="AddCustomer()" />
+<br /><br /> -->
+<form [formGroup]="CustomerModel.formCustomerGroup">
+    Customer Code <input formControlName="CustomerCodeControl" [(ngModel)]="CustomerModel.customerCode"
+        type="text" /><br /><br />
+    Customer Name <input formControlName="CustomerNameControl" [(ngModel)]="CustomerModel.customerName"
+        type="text" /><br /><br />
+    Customer Amount <input formControlName="CustomerAmountControl" [(ngModel)]="CustomerModel.customerAmount"
+        type="text" /><br /><br />
+    <input [disabled]="!(CustomerModel.formCustomerGroup.valid)" type="submit" Value="Add" (click)="AddCustomer()" />
+</form>
 
 
 <table border="1">
@@ -21,7 +26,7 @@ Customer Amount <input [(ngModel)]="CustomerModel.customerAmount" type="text" />
         <td>{{cust.customerName}}</td>
         <td>{{cust.customerAmount}}</td>
         <td><input type="button" value="Edit" (click)="EditCustomer(cust)" />
-            <input type="button" value="Delete"  (click)="DeleteCustomer(cust)"/>
+            <input type="button" value="Delete" (click)="DeleteCustomer(cust)" />
         </td>
     </tr>
 </table>

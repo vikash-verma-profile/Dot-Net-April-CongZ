@@ -1,4 +1,5 @@
 ﻿using EventHubWebApi.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -23,6 +24,7 @@ namespace EventHubWebApi.Controllers
         {
             return _eventDbContext.TblEvents.Where(x => x.IsSpecial == 0).ToList();
         }
+        [Authorize]
         [HttpGet("specials")]
         public List<TblEvent> GetAllSpecialEvents()
         {

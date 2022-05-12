@@ -1,4 +1,5 @@
 ﻿using EventHubWebApi.Interfaces;
+using EventHubWebApi.Models;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;
@@ -13,24 +14,30 @@ namespace EventHubWebApi.ViewModels
 {
     public class JWTManagerRepository : IJWTManagerRepository
     {
-        Dictionary<string, string> UserRecords = new Dictionary<string, string>
-        {
-            { "user1","password1"},
-             { "user2","password2"}
-
-        };
+        Dictionary<string, string> UserRecords;
 
         private readonly IConfiguration configuartion;
+        EventDbContext _eventDbContext;
 
-        public JWTManagerRepository(IConfiguration iconfiguration)
+        public JWTManagerRepository(IConfiguration iconfiguration, EventDbContext eventDbContext)
         {
             configuartion = iconfiguration;
+            _eventDbContext = eventDbContext;
         }
 
         
-        public Tokens Authenticate(Users users)
+        public Tokens Authenticate(Users users,bool IsRegister)
         {
-            if(!UserRecords.Any(x=>x.Key==users.Name && x.Value == users.Password))
+            if (IsRegister)
+            {
+                TblUser user = new TblUser();
+                user.UserName = users.UserName;
+                user.Password = users.Password;
+                _eventDbContext.TblUsers.Add(user);
+                _eventDbContext.SaveChanges();
+            }
+            UserRecords = _eventDbContext.TblUsers.ToList().ToDictionary(x => x.UserName, x => x.Password);
+            if (!UserRecords.Any(x=>x.Key==users.UserName && x.Value == users.Password))
             {
                 return null;
             }
@@ -42,7 +49,7 @@ namespace EventHubWebApi.ViewModels
             {
                 Subject=new ClaimsIdentity(new Claim[]
                 {
-                    new Claim(ClaimTypes.Name,users.Name)
+                    new Claim(ClaimTypes.Name,users.UserName)
                 }),
                 Expires=DateTime.UtcNow.AddMinutes(10),
                 SigningCredentials=new SigningCredentials(new SymmetricSecurityKey(tokenKey),SecurityAlgorithms.HmacSha256Signature)

@@ -1,4 +1,5 @@
 ﻿using EventHubWebApi.Interfaces;
+using EventHubWebApi.Models;
 using EventHubWebApi.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -15,24 +16,35 @@ namespace EventHubWebApi.Controllers
     public class UsersController : ControllerBase
     {
         private readonly IJWTManagerRepository iJWTManager;
-
-        public UsersController(IJWTManagerRepository jWTManager)
+        EventDbContext _eventDbContext;
+        public UsersController(IJWTManagerRepository jWTManager, EventDbContext eventDbContext)
         {
             iJWTManager = jWTManager;
+            _eventDbContext = eventDbContext;
         }
 
         [HttpGet]
-        public List<string> Get()
+        public List<TblUser> Get()
         {
-            var users = new List<string> { "Amit", "Vikash Verma", "Raj Kumar" };
-            return users;
+            return _eventDbContext.TblUsers.ToList();
         }
         [AllowAnonymous]
         [HttpPost]
-        [Route("authenticate")]
+        [Route("register")]
         public IActionResult Authenticate(Users userdata)
         {
-            var token = iJWTManager.Authenticate(userdata);
+            var token = iJWTManager.Authenticate(userdata,true);
+            if (token == null)
+            {
+                return Unauthorized();
+            }
+            return Ok(token);
+        }
+        [HttpPost]
+        [Route("login")]
+        public IActionResult LoginUser(Users userdata)
+        {
+            var token = iJWTManager.Authenticate(userdata, false);
             if (token == null)
             {
                 return Unauthorized();

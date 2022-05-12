@@ -8,6 +8,6 @@ namespace EventHubWebApi.Interfaces
 {
     public interface IJWTManagerRepository
     {
-        Tokens Authenticate(Users users);
+        Tokens Authenticate(Users users, bool IsRegister);
     }
 }

@@ -1,7 +1,4 @@
 export class UserData{
-    email:string='';
+    userName:string='';
     password:string='';
-    year:string='';
-    color:string='';
-    pantone_value:string='';
 }

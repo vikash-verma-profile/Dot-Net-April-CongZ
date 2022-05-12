@@ -3,8 +3,8 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class EventService {
-    private _eventUrl = "https://reqres.in/api/products";
-    private _specialEventsUrl = ""
+    private _eventUrl = "https://localhost:44355/api/Events/events";
+    private _specialEventsUrl = "https://localhost:44355/api/Events/specials"
 
     constructor(private http: HttpClient) {
     }

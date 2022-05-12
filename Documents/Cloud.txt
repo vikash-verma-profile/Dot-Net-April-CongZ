@@ -1,0 +1,12 @@
+Cloud Services
+
+SAAS
+PAAS
+IAAS
+
+
+3 deployement cloud models
+
+1.Public cloud
+2.Private 
+3.Hybrid

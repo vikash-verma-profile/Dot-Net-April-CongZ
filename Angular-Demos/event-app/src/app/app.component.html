@@ -7,10 +7,10 @@
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" routerLink="/events">Events</a>
+        <a class="nav-link"  *ngIf="LoggedIn(true)" routerLink="/events">Events</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/special">Members</a>
+        <a class="nav-link"  *ngIf="LoggedIn(true)" routerLink="/special">Members</a>
       </li>
     </ul>
     <ul class="navbar-nav">

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Customer } from './customer.model';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 
 @Component({
   templateUrl: './customer.component.html'
@@ -18,9 +18,15 @@ export class CustomerComponent {
 
   AddCustomer() {
     //this.CustomerModels.push(this.CustomerModel);
-    this.httpc.post("https://localhost:44318/api/Customer", this.CustomerModel).subscribe(res=>this.Success,res=>this.Error);
-    this.CustomerModel = new Customer();
-    this.GetFromServer();
+
+    var customerdto={
+      customerCode:this.CustomerModel.customerCode,
+      customerAmount:this.CustomerModel.customerAmount,
+      customerName:this.CustomerModel.customerName
+    }
+    this.httpc.post("https://localhost:44318/api/Customer", customerdto).subscribe(res=>{  this.GetFromServer();this.CustomerModel = new Customer();},res=>this.Error);
+    
+  
     //console.log(this.CustomerModels);
   }
 
@@ -50,7 +56,18 @@ export class CustomerComponent {
 
   }
   DeleteCustomer(input: Customer) {
-    console.log(input);
+    console.log("Delete Data from Grid");
+    console.log(input.id);
+    let httparms=new HttpParams().set("Id",input.id)
+    let options={params:httparms};
+    this.httpc.delete("https://localhost:44318/api/Customer/delete", options).subscribe(res=>{this.GetFromServer();});
+  
+  }
+
+  DeleteSuccess(res:any){
+    console.log("Hi");
+    console.log(res);
+    this.GetFromServer();
   }
 
   hasError(typeofvalidator:string,controlname:string):boolean{

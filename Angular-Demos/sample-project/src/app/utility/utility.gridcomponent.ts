@@ -22,8 +22,15 @@ export class GridComponent{
     @Output("grid-selected")
     eventemitter:EventEmitter<any>=new EventEmitter<any>();
 
+    @Output("grid-item-delete")
+    deleteeventemitter:EventEmitter<any>=new EventEmitter<any>();
+
     SelectGrid(_selected:any){
         this.eventemitter.emit(_selected);
+    }
+
+    DeleteGridItem(_selected:any){
+        this.deleteeventemitter.emit(_selected);
     }
 
 }

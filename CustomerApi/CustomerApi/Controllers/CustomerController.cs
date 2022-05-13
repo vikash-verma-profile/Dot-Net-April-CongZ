@@ -36,5 +36,14 @@ namespace CustomerApi.Controllers
         {
             return await  _context.Customers.FindAsync(id);
         }
+
+        [HttpDelete]
+        [Route("delete")]
+        public async Task<int> DeleteCustomer(int Id)
+        {
+            var customer = _context.Customers.Where(x=>x.ID==Id).FirstOrDefault();
+            _context.Customers.Remove(customer);
+            return await _context.SaveChangesAsync();
+        }
     }
 }

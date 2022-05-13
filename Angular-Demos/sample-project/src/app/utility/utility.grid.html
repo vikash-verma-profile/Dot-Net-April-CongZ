@@ -9,7 +9,10 @@
             {{ colObj[col.colName] }}
         </td>
         <td>
-            <a (click)="SelectGrid(colObj)">select</a>
+            <a style="cursor: pointer;" (click)="SelectGrid(colObj)">select</a>
+        </td>
+        <td>
+            <a style="cursor: pointer;"  (click)="DeleteGridItem(colObj)">Delete</a>
         </td>
     </tr>
 </table>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoOnCloud", "DemoOnCloud\DemoOnCloud.csproj", "{62158387-3EBC-45FD-8904-C5B3A474F758}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62158387-3EBC-45FD-8904-C5B3A474F758}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62158387-3EBC-45FD-8904-C5B3A474F758}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62158387-3EBC-45FD-8904-C5B3A474F758}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62158387-3EBC-45FD-8904-C5B3A474F758}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B412EA9-F7EC-4A46-878A-632110CE9113}
+	EndGlobalSection
+EndGlobal
